@@ -1,2 +1,2 @@
-# My lerning Repo
-# Leran With Fun Amigo
+# My Learning Repo
+# Learn with Fun Amigo
