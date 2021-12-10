@@ -1,2 +1,2 @@
-# This is my lerning repo
-# Leran with fun Amigo
+# My lerning Repo
+# Leran With Fun Amigo
