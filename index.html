@@ -7,6 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vijay Personal site</title>
+    
+        <script>
+        function clickCounter() {
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.clickcount) {
+                    localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                } else {
+                    localStorage.clickcount = 1;
+                }
+                document.getElementById("result").innerHTML = "Likes i have " + localStorage.clickcount + ".";
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+    </script>
+    
 </head>
 
 <body style="font-family: monospace;">
@@ -19,6 +35,8 @@
         <h1> Advanture of the great Vijay </h1>
         <h4>by </h4>
         <h2><em>Vijay it self</em></h2>
+        <p><button onclick="clickCounter()" type="button">Like this page</button></p>
+        <div id="result"></div>
         <hr size="3" noshade="">
     </center>
 
