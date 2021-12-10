@@ -6,36 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vijay Personal site</title>
-    
-        <script>
-        function clickCounter() {
-            if (typeof (Storage) !== "undefined") {
-                if (localStorage.clickcount) {
-                    localStorage.clickcount = Number(localStorage.clickcount) + 1;
-                } else {
-                    localStorage.clickcount = 1;
-                }
-                document.getElementById("result").innerHTML = "Likes i have " + localStorage.clickcount + ".";
-            } else {
-                document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-            }
-        }
-                    
-        function dclickCounter() {
-            if (typeof (Storage) !== "undefined") {
-                if (localStorage.dclickcount) {
-                    localStorage.dclickcount = Number(localStorage.dclickcount) - 1;
-                } else {
-                    localStorage.dclickcount = 1;
-                }
-                document.getElementById("result").innerHTML = "Dislikes i have " + localStorage.clickcount + ".";
-            } else {
-                document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-            }
-        }
-    </script>
-    
+    <title>Vijay Personal site</title>    
 </head>
 
 <body style="font-family: monospace;">
@@ -43,10 +14,10 @@
     <b>Home page</b>
     <a href="youtube.html">Youtube page</a>
     <a href="contact.html">Contact Me</a>
-    <p><button onclick="clickCounter()" type="button">Like this page ;)</button></p>
-    <p><button onclick="dclickCounter()" type="button">Dislike this page :(</button></p>
-    <div id="result"></div>
-    
+    <!-- LikeBtn.com BEGIN -->
+    <span class="likebtn-wrapper" data-identifier="item_1"></span>
+    <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+    <!-- LikeBtn.com END -->
     <center>
         <hr size="3" noshade="">
         <h1> Advanture of the great Vijay </h1>
