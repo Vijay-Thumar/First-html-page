@@ -21,6 +21,19 @@
                 document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
             }
         }
+                    
+        function dclickCounter() {
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.dclickcount) {
+                    localStorage.dclickcount = Number(localStorage.dclickcount) - 1;
+                } else {
+                    localStorage.dclickcount = 1;
+                }
+                document.getElementById("result").innerHTML = "Dislikes i have " + localStorage.clickcount + ".";
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
     </script>
     
 </head>
@@ -30,13 +43,15 @@
     <b>Home page</b>
     <a href="youtube.html">Youtube page</a>
     <a href="contact.html">Contact Me</a>
+    <p><button onclick="clickCounter()" type="button">Like this page ;)</button></p>
+    <p><button onclick="clickCounter()" type="button">Dislike this page :(</button></p>
+    <div id="result"></div>
+    
     <center>
         <hr size="3" noshade="">
         <h1> Advanture of the great Vijay </h1>
         <h4>by </h4>
         <h2><em>Vijay it self</em></h2>
-        <p><button onclick="clickCounter()" type="button">Like this page</button></p>
-        <div id="result"></div>
         <hr size="3" noshade="">
     </center>
 
